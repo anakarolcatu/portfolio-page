@@ -23,8 +23,9 @@ export default function Contact() {
           }
           toast.success("Email sent successfully!");
         }}>
+            <input className='h-14 px-4 rounded-lg borderBlack mb-3 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none' name='senderName' type="string" placeholder='Your name' required maxLength={50}/>
             <input className='h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none' name='senderEmail' type="email" placeholder='Your email' required maxLength={500}/>
-            <textarea className='h-52 my-3 rounded-lg borderBlack p-4 resize-none dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none' name='message' placeholder='Your message' required maxLength={5000} />
+            <textarea className='h-52 my-3 rounded-lg borderBlack p-4 resize-none dark:bg-white dark:bg-opacity-80  dark:focus:bg-opacity-100 transition-all dark:outline-none'  name='message' placeholder='Your message' required maxLength={300} />
             <SubmitBtn />
         </form>
     </section>
