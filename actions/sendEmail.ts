@@ -12,6 +12,7 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 export const sendEmail = async (formData: FormData) => {
     const senderEmail = formData.get('senderEmail');
     const message = formData.get('message');
+    const senderName = formData.get('senderName');
 
     //Simple server side validation for the email and message
     if(!validateString(senderEmail, 500)) {
@@ -19,7 +20,7 @@ export const sendEmail = async (formData: FormData) => {
             error: "Invalid sender email"
         }
     }
-    if(!validateString(message, 5000)) {
+    if(!validateString(message, 300)) {
         return {
             error: "Invalid message"
         }
@@ -38,6 +39,7 @@ try {
         react: React.createElement(ContactFormEmail, {
             message: message as string,
             senderEmail: senderEmail as string,
+            senderName: senderName as string,
         })
     });
 } catch (error: unknown) {
