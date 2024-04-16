@@ -23,3 +23,6 @@ This page was build with React & Next.js (App Router & Server Actions), TypeScri
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
 You can see the deploy page in this [link](https://karol-codes.vercel.app/).
+
+
+![license mit](https://img.shields.io/badge/License-MIT-blue)
