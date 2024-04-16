@@ -35,6 +35,9 @@ ProjectProps) {
                 
                 <h3 className='text-2xl font-semibold'>{title}</h3>
                 <p className='mt-2 leading-relaxed text-gray-700 dark:text-white/70'>{description}</p>
+                <a href={projectLink} target='_blank' className='mt-2 leading-relaxed text-gray-950 dark:text-white'>
+                    Check the project here
+                </a>
                 <ul className='flex flex-wrap mt-4 gap-2 sm:mt-auto'>
                     {tags.map((tag, index) => (
                         <li
@@ -43,7 +46,7 @@ ProjectProps) {
                     ))}
                 </ul>
             </div>
-            <a href={projectLink} target='_blank'>
+            
             <Image
             src={imageUrl}
             alt="Projects I worked on"
@@ -60,7 +63,6 @@ ProjectProps) {
             group-even:right-[initial]
             group-even:-left-40'
             />
-            </a>
         </section>
     
     );
