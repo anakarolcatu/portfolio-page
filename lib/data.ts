@@ -5,6 +5,8 @@ import { LuGraduationCap } from "react-icons/lu";
 import challengeDecoder from "@/public/challenge-decodificador.jpeg";
 import fromProject from "@/public/form-project.jpeg";
 import hairDay from "@/public/hair-day.jpeg";
+import aluraGeek from "@/public/alura-geek.png";
+import estudoFlix from "@/public/estudo-flix.png";
 
 export const links = [
   {
@@ -104,6 +106,22 @@ export const educationData = [
 ] as const;
 
 export const projectsData = [
+  {
+    title: "EstudoFlix",
+    description:
+      "Final project of the ONE program by Oracle in partnership with Alura, where we had to build a page to save your favorite videos in each specified category.",
+    tags: ["React", "Styled Components", "Javascript", "API Rest",],
+    imageUrl: estudoFlix,
+    projectLink: "https://github.com/anakarolcatu/estudoflix",
+  },
+  {
+    title: "Alura Geek",
+    description:
+      "Project to create an e-commerce page to insert products in an API rest with Json-server using NPM. The main goal is to train concepts of CRUD.",
+    tags: ["HTML", "Tailwind", "Javascript", "API Rest",],
+    imageUrl: aluraGeek,
+    projectLink: "https://github.com/anakarolcatu/alurageek",
+  },
   {
     title: "Challenge Decoder",
     description:
