@@ -37,6 +37,14 @@ export const links = [
 
 export const experiencesData = [
   {
+    title: "sQpets",
+    location: "sQsquad",
+    description:
+      "HTML/CSS, Responsiveness, React, Javascript, C#, Git, Agile Methodologies, Entrepreneurship, Career Empowerment.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2024",
+  },
+  {
     title: "Front-End Specialization",
     location: "ONE T6 - Oracle One/Alura",
     description:
@@ -71,6 +79,14 @@ export const experiencesData = [
 ] as const;
 
 export const educationData = [
+  {
+    title: "BTech - Computer System Analysis",
+    location: "UNINTER",
+    description:
+      "Programming logic, Algorithms, Object-Oriented Programming, System Analysis, Web Development, Mobile development, Cloud Computing.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2024 - 2027",
+  },
   {
     title: "Professional Front-End Developer Certificate",
     institution: "Coursera/Meta",
