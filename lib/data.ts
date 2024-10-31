@@ -165,6 +165,9 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
+  "C#",
+  "Python",
+  "POO",
   "HTML",
   "CSS",
   "JavaScript",
@@ -174,7 +177,6 @@ export const skillsData = [
   "Node.js",
   "Git",
   "Tailwind",
-  "Python",
   "Bootstrap",
   "Agile Methodologies",
   "UI/UX",
