@@ -2,11 +2,13 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
+import { FaPython } from "react-icons/fa";
 import challengeDecoder from "@/public/challenge-decodificador.jpeg";
 import fromProject from "@/public/form-project.jpeg";
 import hairDay from "@/public/hair-day.jpeg";
 import aluraGeek from "@/public/alura-geek.png";
 import estudoFlix from "@/public/estudo-flix.png";
+import sqpets from "@/public/sqpets-user-homepage.png";
 
 export const links = [
   {
@@ -26,6 +28,10 @@ export const links = [
     hash: "#skills",
   },
   {
+    name: "Education",
+    hash: "#education",
+  },
+  {
     name: "Experience",
     hash: "#experience",
   },
@@ -37,55 +43,55 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "sQpets",
-    location: "sQsquad",
+    title: "Internship - Fullstack Developer",
+    location: "Vivo",
     description:
-      "HTML/CSS, Responsiveness, React, Javascript, C#, Git, Agile Methodologies, Entrepreneurship, Career Empowerment.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2024",
+      "HTML/CSS, Responsiveness, React, Javascript, Python, Git, Agile Methodologies, Node.JS.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2025 - Present",
   },
   {
-    title: "Front-End Specialization",
-    location: "ONE T6 - Oracle One/Alura",
-    description:
-      "HTML/CSS, Responsiveness, React, Javascript, Git, Agile Methodologies, Entrepreneurship, Career Empowerment.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2024",
-  },
-  {
-    title: "Professional Front-End Developer Certificate",
-    location: "Coursera/Meta",
-    description:
-      "HTML/CSS, Responsiveness, React, Bootstrap, Tailwind, Version Control, Git, Unit Testing, UX Design.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2024",
-  },
-  {
-    title: "CS50 - Introduction to Computer Science",
-    location: "Harvard/Online",
-    description:
-      "Programming, C, Python, SQL, PHP, HTML/CSS, Javascript, Flask, IA.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2024",
-  },
-  {
-    title: "UI Designer",
+    title: "Designer",
     location: "Remote",
     description:
-      "Developed UI interfaces for websites and applications using Figma using color theory to create better interfaces tailored to each client's target audience.",
+      "UI/UX design for websites and applications, creating user-friendly interfaces using Figma and Adobe XD.",
     icon: React.createElement(CgWorkAlt),
-    date: "2012 - 2023",
+    date: "2012 - 2022",
+  },
+  {
+    title: "IT Analyst",
+    location: "Groupon",
+    description:
+      "Handled IT support, troubleshooting hardware and network issues, and provided technical assistance to employees.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2011 - 2012",
   },
 ] as const;
 
 export const educationData = [
   {
     title: "BTech - Computer System Analysis",
-    location: "UNINTER",
+    institution: "UNINTER",
     description:
       "Programming logic, Algorithms, Object-Oriented Programming, System Analysis, Web Development, Mobile development, Cloud Computing.",
     icon: React.createElement(LuGraduationCap),
     date: "2024 - 2027",
+  },
+  {
+    title: "The Odin Project - Fullstack Developer",
+    institution: "The Odin Project",
+    description:
+      "HTML/CSS, JavaScript, React, Node.js, SQL, Git, Agile Methodologies.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2025",
+  },
+  {
+    title: "Python Essentials",
+    institution: "Cisco Networking Academy",
+    description:
+      "Python programming fundamentals, data structures, algorithms, and object-oriented programming.",
+    icon: React.createElement(FaPython),
+    date: "2025",
   },
   {
     title: "Professional Front-End Developer Certificate",
@@ -100,7 +106,7 @@ export const educationData = [
     institution: "ONE T6 - Oracle One/Alura",
     description:
       "HTML/CSS, Responsiveness, React, Javascript, Git, Agile Methodologies, Entrepreneurship, Career Empowerment.",
-    icon: React.createElement(CgWorkAlt),
+    icon: React.createElement(LuGraduationCap),
     date: "2024",
   },
   {
@@ -108,7 +114,7 @@ export const educationData = [
     institution: "Harvard",
     description:
       "Programming logic, C, Python, PHP, HTML/CSS, Flask, IA.",
-    icon: React.createElement(FaReact),
+    icon: React.createElement(LuGraduationCap),
     date: "2024",
   },
   {
@@ -116,12 +122,20 @@ export const educationData = [
     institution: "Guarulhos University",
     description:
       "Concepts of visual design, UI, UX and marketing for audiences. HTML, CSS, Adobe pack, 3D prototypes",
-    icon: React.createElement(FaReact),
+    icon: React.createElement(LuGraduationCap),
     date: "2018",
   },
 ] as const;
 
 export const projectsData = [
+  {
+    title: "sQpets",
+    description:
+      "A social network for pets, where you can create a profile for your pet, post photos, and interact with other users.",
+    tags: ["React", "Styled Components", "Javascript", "API Rest",],
+    imageUrl: sqpets,
+    projectLink: "https://github.com/sQsquad/sQpets",
+  },
   {
     title: "EstudoFlix",
     description:
@@ -167,13 +181,13 @@ export const projectsData = [
 export const skillsData = [
   "C#",
   "Python",
+  "SQL Server",
   "POO",
   "HTML",
   "CSS",
   "JavaScript",
   "TypeScript",
   "React",
-  "Next.js",
   "Node.js",
   "Git",
   "Tailwind",
