@@ -37,7 +37,7 @@ export default function Intro() {
         <span className="font-bold">Hello, Ana Karoline.</span> I'm a{" "}
         <span className="font-bold">Development Student</span>. I enjoy
         learning <span className="italic">new ways of coding</span>. My focus is{" "}
-        <span className="underline">Phyton and C#</span>
+        <span className="underline">Node.JS and Python.</span>
         </h1>
         <div className='flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium'>
           <Link href="#contact" className='group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition'

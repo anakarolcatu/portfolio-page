@@ -131,7 +131,7 @@ export const projectsData = [
   {
     title: "sQpets",
     description:
-      "A social network for pets, where you can create a profile for your pet, post photos, and interact with other users.",
+      "A gamified tasks page where you choose a pet and gain skills as you complete tasks and use your points to upgrade and customize your pet.",
     tags: ["React", "Styled Components", "Javascript", "API Rest",],
     imageUrl: sqpets,
     projectLink: "https://github.com/sQsquad/sQpets",
